@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "lib": [
+            "ES2022"
+        ],
+        "module": "commonjs",                 
+    
+        "outDir": "dist",
+        "rootDir": ".",                      
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "resolveJsonModule": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "include": [
+        "src",
+        "tests",
+        "src/compare.ts"
+    ],
+    "exclude": ["dist", "node_modules"]
+}

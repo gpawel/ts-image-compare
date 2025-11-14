@@ -1,0 +1,24 @@
+pavel@aspire-5:~/worksapce/ts-image-compare$ npx tsx src/compare.ts ./assets/selection_1_large.png ./assets/selection_1_large_with_small_change.png 
+{ metric: 'MSE', value: 16.54287183161267 }
+{
+  metric: 'SSIM',
+  value: 0.9998408867582308,
+  details: { performance: 527 }
+}
+{ metric: 'HistCorr', value: 0.9999997560875613 }
+{ metric: 'AbsDiffMean', value: 0.09821467994666194 }
+{
+  metric: 'pHashHamming',
+  value: 3,
+  details: {
+    ha: 'ffffbfff1fff0000003ffff0fff0003087a0a7b0c7bf83e087f981f183e0cfe0',
+    hb: 'ffffbfff1fff0000003ffff0fff0003086a0a7f0c7ff83e087f981f183e0cfe0'
+  }
+}
+{
+  metric: 'PixelDiffRatio',
+  value: 0.0024188727361942838,
+  details: { pixelsDifferent: 6300, total: 2604519 }
+}
+pavel@aspire-5:~/worksapce/ts-image-compare$ ^C
+pavel@aspire-5:~/worksapce/ts-image-compare$ 
