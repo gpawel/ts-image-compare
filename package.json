@@ -11,6 +11,7 @@
     "dev": "vitest"
   },
   "dependencies": {
+    "canvas": "^3.2.0",
     "imghash": "^0.0.6",
     "pixelmatch": "^5.3.0",
     "pngjs": "^7.0.0",

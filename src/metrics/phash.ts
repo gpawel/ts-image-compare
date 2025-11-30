@@ -1,4 +1,5 @@
-import imghash from "imghash";
+
+const imghash = require("imghash");
 import { ComparisonResult } from "../types";
 
 
