@@ -119,9 +119,14 @@ async function loadImageData(path: string): Promise<ImageData> {
    4. SSIM (using ssim.js)
    ============================================================ */
 async function computeSSIM(path1: string, path2: string): Promise<number> {
-  const result = await ssim(path1, path2);
-  return result.mssim;
+  const imgData1 = await loadImageData(path1);
+  const imgData2 = await loadImageData(path2);
+
+  const { mssim } = ssim(imgData1, imgData2);  // no await needed
+
+  return mssim;
 }
+
 
 /* ============================================================
    Full Combined Metrics Pipeline
